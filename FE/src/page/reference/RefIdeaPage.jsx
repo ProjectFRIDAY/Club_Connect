@@ -1,26 +1,19 @@
 import Layout from "../../layout/Layout";
 import React from "react";
 import ReferenceContainer from "../../containers/reference/ReferenceContainer";
-import styled from "styled-components";
+import RefListWrapper from "../../containers/reference/RefListWrapper";
+import FirstModal from "../../containers/modal/FirstModal";
 
 function RefIdeaPage() {
-  const Style = {
-    Wrapper: styled.div`
-      box-sizing: border-box;
-      position: absolute;
-      width: 1241px;
-      height: 456px;
-      top: 430px;
-      background: #FFFFFF;
-      border: 1px solid #000000;
-    `,
-  }
-
+  //처음에만 보여주는 모달 구현
   return (
-    <Layout>
+    <Layout >
+      {/* <FirstModal /> */}
       <ReferenceContainer />
-      <Style.Wrapper>메인 페이지 및 기획/아이디어 페이지</Style.Wrapper>
+      {/* <RefListWrapper /> */}
     </Layout>
   )
 }
+
+
 export default RefIdeaPage;
